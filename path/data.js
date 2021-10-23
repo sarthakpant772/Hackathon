@@ -1,9 +1,19 @@
 const obj = [
-    '{"title":"Testing STUFFFF", "content": "this is web dev"}'
+    {title:"WEB DEVELOPMENT", content: "Steps for learning web development-1. Learn the Basics of HTML, CSS, and Javascript 2.Learn any backend services such as Node.js 3. Learn some frameworks such as react.js 4. Learn some database softwares such as MongoDB "},
+    {title:"ANDROID DEVELOPMENT", content: "Steps for learning android development- 1.Learn the basics of Java programming language. The basics of Java programming language is a must for Android Development. To get the most out of the Kotlin, Java knowledge is necessary. 2. Learn the basics of Kotlin programming language. As now, Kotlin is officially the first-class language for Android app development, learning Kotlin is very important. 3.Now, you are ready for starting the Android App Development. Start with Android Development. 4.While learning Android development and building Android applications, you will learn the advanced feature of Java and Kotlin."},
+    {title:"MACHINE LEARNING", content: "Steps for learning machine learning- 1. Learn Python, data science tools and machine learning concepts 2.Learn data analysis, manipulation & visualization with Pandas, NumPy Matplotlib 3.Learn machine learning with scikit-learn 4. Learn deep learning neural networks "},
+    {title:"WEB DEVELOPMENT AND DATA STRUCTURES", content: "With basic knowledge about coding languages you can start with Learn about 1.what is a linked list, how do they work, how data is stored, how memory is managed, and all other things. 2.STACKS AND QUEUES 3.TREES AND GRAPHS 4.GREEDY METHODOLOGY 5.GREEDY METHODOLOGY 6.BACKTRACKING    Steps for learning web development-1. Learn the Basics of HTML, CSS, and Javascript 2.Learn any backend services such as Node.js 3. Learn some frameworks such as react.js 4. Learn some database softwares such as MongoDB   "},
+    {title:"ANDROID DEVELOPMENT AND DATA STRUCTURES", content: "With basic knowledge about coding languages you can start with Learn about 1.what is a linked list, how do they work, how data is stored, how memory is managed, and all other things. 2.STACKS AND QUEUES 3.TREES AND GRAPHS 4.GREEDY METHODOLOGY 5.GREEDY METHODOLOGY 6.BACKTRACKING     Steps for learning android development- 1.Learn the basics of Java programming language. The basics of Java programming language is a must for Android Development. To get the most out of the Kotlin, Java knowledge is necessary. 2. Learn the basics of Kotlin programming language. As now, Kotlin is officially the first-class language for Android app development, learning Kotlin is very important. 3.Now, you are ready for starting the Android App Development. Start with Android Development. 4.While learning Android development and building Android applications, you will learn the advanced feature of Java and Kotlin."},
+    {title:"MACHINE LEARNING AND DATA STRUCTURES", content: "With basic knowledge about coding languages you can start with Learn about 1.what is a linked list, how do they work, how data is stored, how memory is managed, and all other things. 2.STACKS AND QUEUES 3.TREES AND GRAPHS 4.GREEDY METHODOLOGY 5.GREEDY METHODOLOGY 6.BACKTRACKING     Steps for learning machine learning- 1. Learn Python, data science tools and machine learning concepts 2.Learn data analysis, manipulation & visualization with Pandas, NumPy Matplotlib 3.Learn machine learning with scikit-learn 4. Learn deep learning neural networks  "},
+    {title:"DATA STRUCTURES", content: "Pick any programming language of your choice. If you want to build DSA from scratch, We'll suggest Java/C++. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development. Some OOPs Concepts- Object,Class,Inheritance,Polymorphism,Abstraction,Encapsulation "},
+
+
+
     
 ];
 
-const data = JSON.parse(obj);
+ //const data = JSON.parse(obj);
 
 
-document.getElementById("test").innerHTML = data.title;
+document.getElementById("test").innerHTML = obj[0].title;
+document.getElementById("cont").innerHTML = obj[0].content;
