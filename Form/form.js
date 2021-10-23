@@ -97,8 +97,8 @@ function displayRadioValue() {
   localStorage.setItem('path_no',c);
   var d=0
 // dsa
-if(c===1227 || c===1326 || c === 2325 || c ===2326 || 2327 ){
-  d=0;
+if(c===1227 || c===1326 || c === 2325 || c === 2326 || c===2327 || c===2330 ){
+  d=6;
   localStorage.setItem('path_id',d);
 }
 // web
