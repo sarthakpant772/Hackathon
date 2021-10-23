@@ -1,5 +1,3 @@
-
-
 function displayRadioValue() {
   var c = Number(0);
   var ele = document.getElementsByName("ans1");
