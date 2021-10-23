@@ -1,6 +1,6 @@
 const obj = [
-    '{"title":"Testing STUFFFF", "content": "this is web dev"}',
-    '{"title":"NEWWWW STUFFDDDD", "content": "this is a TESTING DATAS"}'
+    '{"title":"Testing STUFFFF", "content": "this is web dev"}'
+    
 ];
 
 const data = JSON.parse(obj);
