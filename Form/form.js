@@ -1,31 +1,31 @@
 
 
 function display1() {
-    console.log("Hello");
+  //  console.log("Hello");
   
     document.getElementById("qu1").className = "question-1 na";
     document.getElementById("qu2").className = "question-2";
 }
 function display2() {
-    console.log("Hello");
+  //  console.log("Hello");
   
     document.getElementById("qu2").className = "question-2 na";
     document.getElementById("qu3").className = "question-3";
 }
 function display3() {
-    console.log("Hello");
+   // console.log("Hello");
   
     document.getElementById("qu3").className = "question-3 na";
     document.getElementById("qu4").className = "question-4";
 }
 function display4() {
-    console.log("Hello");
+  //  console.log("Hello");
   
     document.getElementById("qu4").className = "question-4 na";
     document.getElementById("qu5").className = "question-5";
 }
 function display5() {
-    console.log("Hello");
+  //  console.log("Hello");
   
     document.getElementById("qu5").className = "question-5 na";
     document.getElementById("qu6").className = "question-6";
