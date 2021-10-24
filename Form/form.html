@@ -5,104 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./form.css">
     <script src="form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <title>Form</title>
 </head>
 <body>
-    <form action="" method="get">
+
+   <div class="form-box">
+    <form action="" method="get" class="fom">
 
    
-        <div class="question-1" id="qu1">
+        <div class="question-1 ques" id="qu1">
             
             <h2 style="font-size: larger; align-self: center;">You are in which year? </h2>
-            <input type="radio" name="ans1" id="1" value="1">First Year
-            <input type="radio" name="ans1" id="2" value="2">Second Year
-            <input type="radio" name="ans1" id="3" value="3">Third Year
-            <input type="radio" name="ans1" id="4" value="4">Fourth Year
-            <br>
-            <br>
-            <br>
+          
+            <label class="rad-label">
+                <input type="radio" name="ans1" id="1" value="1"  class="rad-input">
+                <div class="rad-design"></div>
+                <div class="rad-text">First Year</div>
+            </label>
+            <label class="rad-label">
+
+                <input type="radio" name="ans1" id="2" value="2" class="rad-input">
+                <div class="rad-design"></div>
+                <div class="rad-text">Second Year</div>
+            </label>
+            <label class="rad-label">
+                <input type="radio" name="ans1" id="3" value="3" class="rad-input">
+                <div class="rad-design"></div>
+                <div class="rad-text">Third Year</div>
+            </label>
+
+            <label class="rad-label">
+                <input type="radio" name="ans1" id="4" value="4" class="rad-input">
+                <div class="rad-design"></div>
+                <div class="rad-text">Fourth Year</div>
+            </label>
+           
             
               <span><a onclick="display1()" href="#"></a></span> 
           </div>
 
-        <div class="question-2 na" id="qu2">
+        <div class="question-2  ques na" id="qu2">
             <h2 style="font-size: larger;">Do you have any prior experience in programming?</h2>
+           
+            <label class="rad-label">
+                <input type="radio" name="ans2" id="5" value="5" class="rad-input">
+                <div class="rad-design"></div>
+                <div class="rad-text">YES</div>
+            </label>
 
-            <input type="radio" name="ans2" id="5" value="5">Yes
-
-
-            <input type="radio" name="ans2" id="6" value="1000">No
-            <br>
-            <br>
-            <br>
+            <label class="rad-label">
+                <input type="radio" name="ans2" id="6" value="1000" class="rad-input">
+                <div class="rad-design"></div>
+                <div class="rad-text">NO</div>
+            </label>
+           
             <span><a onclick="display2()" href="#"></a></span> 
         </div>
 
-        <div class="question-3 na" id="qu3">
+        <div class="question-3  ques na" id="qu3">
             <h2 style="font-size: larger;">Are you familiar with any of these programming language?</h2>
+            
            
 
+            <label class="rad-label">
+            <input type="radio" name="ans3" id="8" value="8"  class="rad-input">
+            <div class="rad-design"></div>
+                <div class="rad-text">C/C++</div>
+            
+            </label>
+            <label class="rad-label">
+                <input type="radio" name="ans3" id="9" value="8" class="rad-input">
+                <div class="rad-design"></div>
+                    <div class="rad-text">Python</div>
+                
+            </label>
+            <label class="rad-label">
+                <input type="radio" name="ans3" id="10" value="8" class="rad-input">
+                <div class="rad-design"></div>
+                    <div class="rad-text">Java</div>
+                
+            </label>
+            <label class="rad-label">
+            <input type="radio" name="ans3" id="7" value="7" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">non of the above</div>
+            
+            </label>
 
-            <input type="radio" name="ans3" id="8" value="8">C/C++
-            <input type="radio" name="ans3" id="9" value="8">Python
-            <input type="radio" name="ans3" id="10" value="8">Java
-            <input type="radio" name="ans3" id="7" value="7">non of the above
-
-            <br>
-            <br>
-            <br>
+            
             <span><a onclick="display3()" href="#"></a></span>
 
             
 
         </div>
 
-        <div class="question-4 na" id="qu4">
+        <div class="question-4  ques na" id="qu4">
             <h2 style="font-size: larger;">Any experience with Data Stuctures and Algorithms(DSA)?</h2>
-
- <input type="radio" name="ans4" id="11" value="11">Yes
-
-            <input type="radio" name="ans4" id="12" value="100">No
-             <br>
-            <br>
-            <br>
+            
+            <label class="rad-label">
+            <input type="radio" name="ans4" id="11" value="11" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">Yes</div>
+            </label>
+            <label class="rad-label">
+            <input type="radio" name="ans4" id="12" value="100" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">No</div>
+            </label>
+          
             <span><a onclick="display4()" href="#"></a></span> 
 
 
         </div>
 
-        <div class="question-5 na" id="qu5">
+        <div class="question-5  ques na" id="qu5">
             <h2 style="font-size: larger;">Any experience with Competetive programming?</h2>
+            
 
-
-
-            <input type="radio" name="ans5" id="13" value="50">Yes
-            <input type="radio" name="ans5" id="14" value="50">No
-            <br>
-            <br>
-            <br>
+            <label class="rad-label">
+            <input type="radio" name="ans5" id="13" value="50" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">Yes</div>
+            </label>
+            <label class="rad-label">
+            <input type="radio" name="ans5" id="14" value="50" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">No</div>
+            </label>
+            
             <span><a onclick="display5()" href="#"></a></span>
 
 
         </div>
 
-        <div class="question-6 na" id="qu6">
+        <div class="question-6 ques na " id="qu6">
             <h2 style="font-size: larger;">Which tech exited you the most?</h2>
+          
 
-
-
-            <input type="radio" name="ans6" id="15" value="69">Web development
-            <input type="radio" name="ans6" id="16" value="169">Machine Learning
-            <input type="radio" name="ans6" id="17" value="1169">Android development
-            <br>
-            <br>
-            <br>
+            <label class="rad-label">
+            <input type="radio" name="ans6" id="15" value="69" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">Web development</div>
+            </label>
+            <label class="rad-label">
+            <input type="radio" name="ans6" id="16" value="169" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">Machine Learning</div>
+            </label>
+    <label class="rad-label">            
+            <input type="radio" name="ans6" id="17" value="1169" class="rad-input">
+            <div class="rad-design"></div>
+            <div class="rad-text">Android development</div>
+            </label>
+           
             <span><a href="../path/path.html " type="reset" id="but" onclick="displayRadioValue()" ></a></span> 
 
 
         </div>
     </form>
-
+    </div>
 
     <script src="./form.js"></script>
 
