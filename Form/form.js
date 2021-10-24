@@ -95,7 +95,7 @@ function displayRadioValue() {
   console.log(c);
 
   localStorage.setItem('path_no',c);
-  var d=0
+  var d=0;
 // dsa
 if(c===1227 || c===1326 || c === 2325 || c === 2326 || c===2327 || c===2330 ){
   d=6;
@@ -103,7 +103,7 @@ if(c===1227 || c===1326 || c === 2325 || c === 2326 || c===2327 || c===2330 ){
 }
 // web
 if(c === 144 || c=== 145 || c=== 146 || c=== 147){
-  d=1;
+  d=0;
   localStorage.setItem('path_id',d);
 }
 // ml
@@ -111,24 +111,24 @@ if(c=== 244 || c=== 245 || c=== 246 || c===247 ){
   d=2;
   localStorage.setItem('path_id',d);
 }
-
+// android
 if(c=== 1244 || c=== 1245 || c=== 1246 || c=== 1247 ){
+  d=1;
+  localStorage.setItem('path_id',d);
+}
+// web+dsa
+if(c=== 233 || c=== 234 || c=== 235 || c===236 ){
   d=3;
   localStorage.setItem('path_id',d);
 }
-
-if(c=== 233 || c=== 234 || c=== 235 || c===236 ){
-  d=4;
-  localStorage.setItem('path_id',d);
-}
-
+// ml+dsa
 if(c=== 333 || c=== 334 || c=== 335 || c===336 ){
   d=5;
   localStorage.setItem('path_id',d);
 }
-
+// and+dsa
 if(c === 1333 || c === 1334 || c === 1335 || c === 1336 ){
-  d=6;
+  d=4;
   localStorage.setItem('path_id',d);
 }
 }
