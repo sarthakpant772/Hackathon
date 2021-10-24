@@ -1,190 +1,187 @@
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.fom{
+.fom {
   align-self: center;
 }
 .na {
-    display: none;
+  display: none;
 }
-.ques{
+.ques {
   align-self: center;
   line-height: 3rem;
   justify-content: space-evenly;
 }
-.ques h2{
-  font-family: 'Ubuntu', sans-serif;
+.ques h2 {
+  font-family: "Ubuntu", sans-serif;
   font-size: 6em;
 }
-span{
-    position: relative;
-    display: inline-flex;
-    width: 180px;
-    height: 55px;
-    margin: 0 15px;
-    perspective: 1000px;
-  }
-   span  a{
-    font-size: 19px;
-    letter-spacing: 1px;
-    transform-style: preserve-3d;
-    transform: translateZ(-25px);
-    transition: transform .25s;
-    font-family: 'Montserrat', sans-serif;
-    
-  }
-  span a:before,
-  span a:after{
-    position: absolute;
-    content: "SUBMIT";
-    height: 55px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid #9900EF;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-  span a:before{
-    color: #fff;
-    background: #9900EF;
-    transform: rotateY(0deg) translateZ(25px);
-  }
-  span a:after{
-    color: #000;
-    transform: rotateX(90deg) translateZ(25px);
-  }
-  span a:hover{
-    transform: translateZ(-25px) rotateX(-90deg);
-  }
-  
-  .rad-label {
-    display: flex;
-    align-items: center;
-  
-    border-radius: 100px;
-    padding: 14px 16px;
-    margin: 10px 0;
-  
-    cursor: pointer;
-    transition: .3s;
-  }
-  
-  .rad-label:hover,
-  .rad-label:focus-within {
-    background: #a94ef38e;
-  }
-  
-  .rad-input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    z-index: -1;
-  }
-  
-  .rad-design {
-    width: 22px;
-    height: 22px;
-    border-radius: 100px;
-  
-    background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
-    position: relative;
-  }
-  
-  .rad-design::before {
-    content: '';
-  
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-  
-    background: hsl(0, 0%, 90%);
-    transform: scale(1.1);
-    transition: .3s;
-  }
-  
-  .rad-input:checked+.rad-design::before {
-    transform: scale(0);
-  }
-  
-  .rad-text {
-    color: hsl(0, 6%, 16%);
-    margin-left: 14px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 900;
-  
-    transition: .3s;
-  }
-  
-  .rad-input:checked~.rad-text {
-    color: hsl(0, 37%, 32%);
-  }
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "SUBMIT";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #9900ef;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before {
+  color: #fff;
+  background: #9900ef;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
 
-  .form-box {
-    background-color: #e6e6e6c5;
-    margin: auto auto;
-    padding: 40px;
-    border-radius: 2%;
-    box-shadow: 0 0 10px #000;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 500px;
-    height: 600px;
-  }
-  .form-box:before {
-    background-image: url("wave.png");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    display: block;
-    /* filter: blur(2px); */
-  }
-  .form-box .header-text {
-    font-size: 32px;
-    font-weight: 600;
-    padding-bottom: 30px;
-    text-align: center;
-  }
+.rad-label {
+  display: flex;
+  align-items: center;
 
- 
-  
-  
-  
-  
-  span a {
-    color: #BBB;
-  }
-  
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background: #a94ef38e;
+}
+
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+
+  background: linear-gradient(
+    to right bottom,
+    hsl(154, 97%, 62%),
+    hsl(225, 97%, 62%)
+  );
+  position: relative;
+}
+
+.rad-design::before {
+  content: "";
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.rad-input:checked + .rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  color: hsl(0, 6%, 16%);
+  margin-left: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+
+  transition: 0.3s;
+}
+
+.rad-input:checked ~ .rad-text {
+  color: hsl(0, 37%, 32%);
+}
+
+.form-box {
+  background-color: #e6e6e6c5;
+  margin: auto auto;
+  padding: 40px;
+  border-radius: 2%;
+  box-shadow: 0 0 10px #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 600px;
+}
+.form-box:before {
+  background-image: url("wave.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  /* filter: blur(2px); */
+}
+.form-box .header-text {
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+span a {
+  color: #bbb;
+}
